@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RAPI Kediri Lokal 4 — Beranda</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="RAPI Kediri Lokal 4 logo" class="logo">
+      <div class="brand-text">
+        <h1>RAPI Kediri Lokal 4</h1>
+        <p>Radio Antar Penduduk Indonesia — Kediri Lokal 4</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Beranda</a></li>
+        <li class="has-sub"><a href="#">Profil ▾</a>
+          <ul class="sub">
+            <li><a href="tentang.html">Tentang RAPI</a></li>
+            <li><a href="kode10.html">Kode 10</a></li>
+            <li><a href="kode_etik.html">Kode Etik</a></li>
+          </ul>
+        </li>
+        <li><a href="anggota.html">Data Anggota</a></li>
+        <li><a href="pendaftaran.html">Pendaftaran</a></li>
+        <li><a href="kegiatan.html">Kegiatan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Selamat datang di situs resmi</h2>
+      <p>Platform informasi, dokumentasi, dan pengurusan callsign anggota RAPI Kediri Lokal 4.</p>
+      <a class="btn" href="anggota.html">Cari Callsign Anggota</a>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h3>Informasi Anggota</h3>
+        <p>Kelola data anggota, status keaktifan, dan masa berlaku callsign.</p>
+        <a href="anggota.html">Kelola Anggota →</a>
+      </article>
+      <article class="card">
+        <h3>Pendaftaran & Perpanjangan</h3>
+        <p>Pendaftaran anggota baru dan perpanjangan callsign berbasis formulir.</p>
+        <a href="pendaftaran.html">Daftar Sekarang →</a>
+      </article>
+      <article class="card">
+        <h3>Dokumentasi Kegiatan</h3>
+        <p>Berita, foto, dan laporan kegiatan RAPI Kediri Lokal 4.</p>
+        <a href="kegiatan.html">Lihat Kegiatan →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> RAPI Kediri Lokal 4 — All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+/* Simple modern responsive CSS for RAPI Kediri Lokal 4 */
+:root{--primary:#0b8457;--dark:#0a3a2a;--muted:#666;--bg:#f7f7f7}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Arial;background:var(--bg);margin:0;color:#111;line-height:1.5}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:linear-gradient(90deg,var(--primary),#7be86e);color:#fff;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:64px;height:64px;object-fit:contain;border-radius:8px;background:#fff;padding:4px}
+.brand-text h1{margin:0;font-size:18px}
+.nav{position:relative}
+.nav-toggle{display:none;background:transparent;border:0;font-size:20px;color:#fff}
+.nav-list{display:flex;gap:12px;list-style:none;margin:0;padding:0;align-items:center}
+.nav-list a{color:#fff;text-decoration:none;padding:8px 10px;border-radius:6px}
+.nav-list .has-sub{position:relative}
+.sub{position:absolute;left:0;top:40px;background:#fff;color:#111;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,.12);padding:8px;display:none;min-width:200px}
+.sub li{list-style:none;margin:0}
+.sub a{color:#111;padding:8px 12px;display:block}
+.has-sub:hover .sub{display:block}
+
+.container{max-width:1100px;margin:24px auto;padding:0 16px}
+.hero{background:linear-gradient(180deg,rgba(255,255,255,.7),rgba(255,255,255,.9));padding:28px;border-radius:12px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.btn{display:inline-block;margin-top:12px;padding:10px 16px;border-radius:8px;background:var(--dark);color:#fff;text-decoration:none}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+.card{background:#fff;padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.05)}
+
+.table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.04)}
+.table th,.table td{padding:10px;border-bottom:1px solid #eee;text-align:left}
+.search{display:flex;gap:8px;margin-bottom:12px}
+.search input{flex:1;padding:10px;border-radius:8px;border:1px solid #ccc}
+.site-footer{text-align:center;padding:14px 8px;color:var(--muted);margin-top:24px}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.photo{background:#fff;padding:20px;border-radius:8px;display:flex;align-items:center;justify-content:center;height:120px;box-shadow:0 6px 18px rgba(0,0,0,.04)}
+
+/* Responsive */
+@media (max-width:800px){
+  .nav-toggle{display:block}
+  .nav-list{display:none;flex-direction:column;width:100%;background:linear-gradient(180deg,var(--primary),#7be86e);position:absolute;left:0;top:64px;padding:12px;border-radius:0}
+  .nav-list a{padding:12px 8px}
+  .has-sub .sub{position:static;box-shadow:none;margin-top:8px}
+  .site-header{padding:12px}
+}
